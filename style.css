@@ -12,13 +12,23 @@ body {
   color: #333;
   line-height: 1.6;
   font-size: 16px;
+  display: flex;
 }
 
 /* Cabeçalho */
 header {
   background: #4e73df;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 2rem;
+  width: 250px; /* Largura fixa para a parte azul */
+  height: 100vh; /* Para ocupar toda a altura da tela */
+}
+
+header .header-content {
   text-align: center;
 }
 
@@ -42,6 +52,25 @@ header a:hover {
   text-decoration: underline;
 }
 
+#foto img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* Corpo do conteúdo (à direita da parte azul) */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 250px; /* Para que o conteúdo comece após a parte azul */
+  height: 100vh;
+  overflow-y: auto;
+}
+
 /* Seções do currículo */
 section {
   max-width: 1200px;
@@ -52,7 +81,7 @@ section {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #333;
@@ -157,46 +186,26 @@ footer {
   margin-top: 2rem;
 }
 
-/* Botão de contato */
-#contato a {
-  display: inline-block;
-  background-color: #4e73df;
-  color: #fff;
-  padding: 1rem 2rem;
-  text-decoration: none;
-  border-radius: 50px;
-  font-size: 1.2rem;
-  text-align: center;
-  transition: background-color 0.3s ease;
-  margin-top: 1rem;
-  cursor: pointer;
-}
-#a {
-  cursor: pointer;
-}
-
-#contato a:hover {
-  background-color: #2e59d9;
-}
-
 /* Responsividade */
 @media (max-width: 768px) {
-  header h1 {
-    font-size: 2rem;
+  body {
+    flex-direction: column;
   }
 
-  section {
-    padding: 1.5rem;
+  header {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    text-align: center;
   }
 
-  #certificados li {
-    flex: 1 1 100%;
+  .main-content {
+    margin-left: 0;
+    padding: 1rem;
   }
+
   #foto img {
-    height: 250px;
-    width: 250px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
+    width: 100px;
+    height: 100px;
   }
 }
