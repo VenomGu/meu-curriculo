@@ -171,6 +171,9 @@ footer {
   margin-top: 1rem;
   cursor: pointer;
 }
+#a {
+  cursor: pointer;
+}
 
 #contato a:hover {
   background-color: #2e59d9;
