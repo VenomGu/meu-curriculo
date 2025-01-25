@@ -192,4 +192,11 @@ footer {
   #certificados li {
     flex: 1 1 100%;
   }
+  #foto {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
 }
