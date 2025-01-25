@@ -1,0 +1,159 @@
+/* Reset de margin e padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+/* Seções */
+section {
+  margin: 30px 0;
+}
+
+/* Títulos das seções */
+section h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+}
+
+/* Sobre Mim */
+#sobre p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Experiência Profissional */
+.experiencia-item {
+  margin-bottom: 20px;
+}
+
+.experiencia-item h3 {
+  font-size: 1.5rem;
+  color: #2980b9;
+  margin-bottom: 5px;
+}
+
+.experiencia-item p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+}
+
+.experiencia-item ul {
+  margin-top: 10px;
+}
+
+.experiencia-item li {
+  font-size: 1.1rem;
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+/* Educação */
+.educacao-item {
+  margin-bottom: 20px;
+}
+
+.educacao-item h3 {
+  font-size: 1.5rem;
+  color: #2980b9;
+  margin-bottom: 5px;
+}
+
+.educacao-item p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+}
+
+/* Habilidades */
+#habilidades ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 15px;
+}
+
+#habilidades li {
+  font-size: 1.2rem;
+  background-color: #ecf0f1;
+  padding: 8px 15px;
+  border-radius: 20px;
+  color: #2980b9;
+  font-weight: bold;
+}
+
+/* Certificados */
+#certificados ul {
+  list-style: none;
+}
+
+#certificados li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+/* Footer */
+footer {
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  section h2 {
+    font-size: 1.6rem;
+  }
+
+  .experiencia-item h3,
+  .educacao-item h3 {
+    font-size: 1.3rem;
+  }
+
+  .experiencia-item li,
+  .educacao-item p {
+    font-size: 1rem;
+  }
+}
