@@ -35,14 +35,13 @@ habilidadesItems.forEach(item => {
     });
 });
 
-// 3. Exibir uma mensagem de alerta quando o botão de contato for clicado
-// Adicione o seguinte código ao HTML se quiser um botão de contato
-// <button id="contatoBtn">Entrar em contato</button>
-
+// 3. Exibir uma mensagem de alerta quando o botão de contato for clicado, mas sem interferir no link do WhatsApp
 const contatoBtn = document.getElementById('contatoBtn');
 if (contatoBtn) {
-    contatoBtn.addEventListener('click', () => {
-        alert('Obrigado por entrar em contato! Vou responder o mais rápido possível.');
-    });
-    
+    // Verifica se o botão não é o link do WhatsApp
+    if (!contatoBtn.closest('a')) {
+        contatoBtn.addEventListener('click', () => {
+            alert('Obrigado por entrar em contato! Vou responder o mais rápido possível.');
+        });
+    }
 }

@@ -1,136 +1,178 @@
-/* Reset de margin e padding */
+/* Reset de estilo básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-/* Corpo da página */
-body {
   font-family: "Arial", sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
-  padding: 20px;
 }
 
-/* Header */
+/* Corpo do documento */
+body {
+  background-color: #f4f7fc;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Cabeçalho */
 header {
-  background-color: #2c3e50;
+  background: #4e73df;
   color: #fff;
-  padding: 20px 0;
+  padding: 2rem;
   text-align: center;
 }
 
 header h1 {
   font-size: 2.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 0.5rem;
 }
 
 header p {
   font-size: 1.2rem;
-  margin: 5px 0;
+  margin-bottom: 1rem;
 }
 
-/* Seções */
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+/* Seções do currículo */
 section {
-  margin: 30px 0;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Títulos das seções */
-section h2 {
-  font-size: 1.8rem;
-  color: #2c3e50;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  border-bottom: 2px solid #3498db;
-  padding-bottom: 5px;
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  border-bottom: 2px solid #4e73df;
+  padding-bottom: 0.5rem;
 }
 
-/* Sobre Mim */
+/* Sobre mim */
 #sobre p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  color: #555;
   line-height: 1.8;
 }
 
-/* Experiência Profissional */
+/* Lista de experiências e habilidades */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Itens de experiência */
 .experiencia-item {
-  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .experiencia-item h3 {
   font-size: 1.5rem;
-  color: #2980b9;
-  margin-bottom: 5px;
+  color: #333;
+  margin-bottom: 0.5rem;
 }
 
 .experiencia-item p {
-  font-size: 1.1rem;
-  color: #7f8c8d;
+  font-size: 1rem;
+  color: #777;
 }
 
 .experiencia-item ul {
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
-.experiencia-item li {
-  font-size: 1.1rem;
-  list-style-type: square;
-  margin-left: 20px;
-}
-
-/* Educação */
-.educacao-item {
-  margin-bottom: 20px;
-}
-
-.educacao-item h3 {
-  font-size: 1.5rem;
-  color: #2980b9;
-  margin-bottom: 5px;
-}
-
-.educacao-item p {
-  font-size: 1.1rem;
-  color: #7f8c8d;
+.experiencia-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Habilidades */
-#habilidades ul {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  gap: 15px;
+#habilidades li {
+  background: #ecf0f1;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 0.5rem;
+  font-size: 1.1rem;
+  color: #555;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-#habilidades li {
-  font-size: 1.2rem;
-  background-color: #ecf0f1;
-  padding: 8px 15px;
-  border-radius: 20px;
-  color: #2980b9;
-  font-weight: bold;
+#habilidades li:hover {
+  background-color: #4e73df;
+  color: #fff;
+  transform: scale(1.1);
 }
 
 /* Certificados */
 #certificados ul {
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 #certificados li {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: #34495e;
+  background-color: #f0f0f5;
+  padding: 1rem;
+  border-radius: 8px;
+  flex: 1 1 30%;
+  text-align: center;
+  font-size: 1rem;
 }
 
-/* Footer */
+#certificados li:hover {
+  background-color: #4e73df;
+  color: #fff;
+}
+
+/* Rodapé */
 footer {
-  background-color: #2c3e50;
+  background: #4e73df;
   color: #fff;
   text-align: center;
-  padding: 15px 0;
-  margin-top: 40px;
-  font-size: 1rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Botão de contato */
+#contato a {
+  display: inline-block;
+  background-color: #4e73df;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+#contato a:hover {
+  background-color: #2e59d9;
 }
 
 /* Responsividade */
@@ -139,21 +181,11 @@ footer {
     font-size: 2rem;
   }
 
-  header p {
-    font-size: 1rem;
+  section {
+    padding: 1.5rem;
   }
 
-  section h2 {
-    font-size: 1.6rem;
-  }
-
-  .experiencia-item h3,
-  .educacao-item h3 {
-    font-size: 1.3rem;
-  }
-
-  .experiencia-item li,
-  .educacao-item p {
-    font-size: 1rem;
+  #certificados li {
+    flex: 1 1 100%;
   }
 }
