@@ -1,3 +1,4 @@
+/* Reset de estilo básico */
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@
   font-family: "Arial", sans-serif;
 }
 
+/* Corpo do documento */
 body {
   background-color: #f4f7fc;
   color: #333;
@@ -15,6 +17,7 @@ body {
   align-items: center;
 }
 
+/* Cabeçalho */
 header {
   background: #4e73df;
   border-radius: 10px;
@@ -30,24 +33,20 @@ header {
   top: 0;
   cursor: pointer;
 }
-header p {
-  color: #fff;
-}
 
 header .header-content {
   text-align: center;
+  display: none; /* Esconde as informações inicialmente */
   padding: 20px;
   background-color: #4e73df; /* Cor de fundo azul */
 }
 
-/* Foto */
 #foto img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
-  cursor: pointer;
 }
 
 /* Corpo do conteúdo */
@@ -65,22 +64,24 @@ footer {
   margin-top: 2rem;
 }
 
-/* Estilo de collapse no mobile */
-@media (max-width: 768px) {
-  .header-content {
-    display: none; /* Esconde o conteúdo até o clique na foto */
-  }
-
-  .foto-container {
-    text-align: center;
-    margin-top: 30px;
-  }
-}
-
 /* Responsividade */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  header {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 1rem;
+  }
+
   #foto img {
-    width: 100px;
-    height: 100px;
+    display: none;
   }
 }
