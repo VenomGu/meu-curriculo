@@ -30,6 +30,9 @@ header {
   top: 0;
   cursor: pointer;
 }
+header p {
+  color: #fff;
+}
 
 header .header-content {
   text-align: center;
