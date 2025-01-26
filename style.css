@@ -21,12 +21,12 @@ header {
   color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 6px;
   width: 380px; /* Largura fixa para a parte azul */
   height: auto; /* Para ocupar toda a altura da tela */
   margin: 5px;
+  position: fixed;
 }
 
 header .header-content {
@@ -34,13 +34,13 @@ header .header-content {
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 0.5rem;
   font-size: xx-large;
 }
 
 header p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -66,11 +66,9 @@ header a:hover {
 .main-content {
   flex: 1;
   padding: 2rem;
-  background: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-left: 50px; /* Para que o conteúdo comece após a parte azul */
+  margin-left: 400px; /* Para que o conteúdo comece após a parte azul */
   height: 100vh;
-  overflow-y: auto;
 }
 
 /* Seções do currículo */
