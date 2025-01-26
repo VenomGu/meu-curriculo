@@ -15,6 +15,20 @@ body {
   display: flex;
 }
 
+/* Estilo personalizado para o botão */
+.btn-custom {
+  background-color: #4e73df; /* Cor de fundo personalizada */
+  color: white; /* Cor do texto */
+  font-weight: bold; /* Tornar o texto mais forte */
+  border-radius: 20px; /* Bordas arredondadas */
+  padding: 10px 20px; /* Ajuste de padding */
+  transition: background-color 0.3s ease; /* Animação ao passar o mouse */
+}
+
+.btn-custom:hover {
+  background-color: #2e59d9; /* Cor de fundo ao passar o mouse */
+}
+
 /* Cabeçalho */
 header {
   background: #4e73df;
