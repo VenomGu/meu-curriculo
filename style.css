@@ -13,8 +13,6 @@ body {
   line-height: 1.6;
   font-size: 16px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 /* Cabeçalho */
@@ -27,18 +25,34 @@ header {
   align-items: center;
   padding: 6px;
   width: 380px; /* Largura fixa para a parte azul */
-  height: auto;
+  height: auto; /* Para ocupar toda a altura da tela */
   margin: 5px;
   position: fixed;
-  top: 0;
-  cursor: pointer;
 }
 
 header .header-content {
   text-align: center;
-  display: none; /* Esconde as informações inicialmente */
-  padding: 20px;
-  background-color: #4e73df; /* Cor de fundo azul */
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-size: xx-large;
+}
+
+header p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header a:hover {
+  text-decoration: underline;
 }
 
 #foto img {
@@ -49,13 +63,128 @@ header .header-content {
   margin-bottom: 1rem;
 }
 
-/* Corpo do conteúdo */
+/* Corpo do conteúdo (à direita da parte azul) */
 .main-content {
+  flex: 1;
   padding: 2rem;
-  margin-top: 200px; /* Dá espaço para o cabeçalho fixo */
-  width: 100%;
+  margin-left: 400px; /* Para que o conteúdo comece após a parte azul */
+  height: 100vh;
 }
 
+/* Seções do currículo */
+section {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  border-bottom: 2px solid #4e73df;
+  padding-bottom: 0.5rem;
+}
+
+/* Sobre mim */
+#sobre p {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#sobre p:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Lista de experiências e habilidades */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Itens de experiência */
+.experiencia-item {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experiencia-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.experiencia-item p {
+  font-size: 1rem;
+  color: #777;
+}
+
+.experiencia-item ul {
+  margin-top: 1rem;
+}
+
+.experiencia-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Habilidades */
+#habilidades li {
+  background: #ecf0f1;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 0.5rem;
+  font-size: 1.1rem;
+  color: #555;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#habilidades li:hover {
+  background-color: #4e73df;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Certificados */
+#certificados ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#certificados li {
+  background-color: #f0f0f5;
+  padding: 1rem;
+  border-radius: 8px;
+  flex: 1 1 30%;
+  text-align: center;
+  font-size: 1rem;
+}
+
+#certificados li:hover {
+  background-color: #4e73df;
+  color: #fff;
+}
+
+/* Rodapé */
 footer {
   background: #4e73df;
   color: #fff;
@@ -65,6 +194,7 @@ footer {
 }
 
 /* Responsividade */
+/* Responsividade */
 @media (max-width: 768px) {
   body {
     flex-direction: column;
@@ -72,6 +202,7 @@ footer {
 
   header {
     width: 100%;
+    height: auto;
     padding: 1rem;
     text-align: center;
   }
@@ -84,5 +215,81 @@ footer {
   #foto img {
     width: 100px;
     height: 100px;
+  }
+
+  /* Ajuste de font-size para telas menores que 768px */
+  header h1 {
+    font-size: 1.5rem; /* Reduzido para dispositivos menores */
+  }
+
+  header p {
+    font-size: 0.9rem; /* Ajuste para tornar o texto mais legível em telas pequenas */
+  }
+
+  section h2 {
+    font-size: 1.5rem; /* Reduzido para maior legibilidade */
+  }
+
+  ul li {
+    font-size: 1rem; /* Ajuste para listas */
+  }
+
+  .experiencia-item h3 {
+    font-size: 1.2rem; /* Reduzido para melhor adaptação */
+  }
+
+  .experiencia-item p {
+    font-size: 0.9rem; /* Ajuste de tamanho de texto */
+  }
+
+  #habilidades li {
+    font-size: 1rem; /* Ajuste de tamanho de fonte */
+  }
+
+  #certificados li {
+    font-size: 0.9rem; /* Ajuste no tamanho das fontes nos itens de certificados */
+  }
+
+  footer {
+    font-size: 0.9rem; /* Ajuste do tamanho da fonte no rodapé */
+  }
+}
+
+/* Para telas de celular, com largura até 480px */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.25rem; /* Ajusta mais para celulares pequenos */
+  }
+
+  header p {
+    font-size: 0.85rem; /* Reduz mais a fonte para telas pequenas */
+  }
+
+  section h2 {
+    font-size: 1.2rem; /* Ajusta o tamanho para maior clareza */
+  }
+
+  ul li {
+    font-size: 0.9rem; /* Ajuste de tamanho das listas */
+  }
+
+  .experiencia-item h3 {
+    font-size: 1rem; /* Mais ajuste para telas menores */
+  }
+
+  .experiencia-item p {
+    font-size: 0.85rem; /* Ajuste para não sobrecarregar */
+  }
+
+  #habilidades li {
+    font-size: 0.9rem; /* Ajuste nos itens */
+  }
+
+  #certificados li {
+    font-size: 0.85rem; /* Ajuste no tamanho para telas pequenas */
+  }
+
+  footer {
+    font-size: 0.8rem; /* Ajuste final no rodapé */
   }
 }
