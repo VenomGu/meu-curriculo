@@ -18,7 +18,7 @@ body {
 /* Cabeçalho */
 header {
   background: #4e73df;
-  border-radius: 10px;
+  border-radius: 5px;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -91,12 +91,9 @@ section h2 {
 
 /* Sobre mim */
 #sobre p {
-  background-color: #f9f9f9;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
 }
 #sobre p:hover {
   transform: translateY(-5px);
@@ -194,7 +191,6 @@ footer {
 }
 
 /* Responsividade */
-/* Responsividade */
 @media (max-width: 768px) {
   body {
     flex-direction: column;
@@ -215,81 +211,5 @@ footer {
   #foto img {
     width: 100px;
     height: 100px;
-  }
-
-  /* Ajuste de font-size para telas menores que 768px */
-  header h1 {
-    font-size: 1.5rem; /* Reduzido para dispositivos menores */
-  }
-
-  header p {
-    font-size: 0.9rem; /* Ajuste para tornar o texto mais legível em telas pequenas */
-  }
-
-  section h2 {
-    font-size: 1.5rem; /* Reduzido para maior legibilidade */
-  }
-
-  ul li {
-    font-size: 1rem; /* Ajuste para listas */
-  }
-
-  .experiencia-item h3 {
-    font-size: 1.2rem; /* Reduzido para melhor adaptação */
-  }
-
-  .experiencia-item p {
-    font-size: 0.9rem; /* Ajuste de tamanho de texto */
-  }
-
-  #habilidades li {
-    font-size: 1rem; /* Ajuste de tamanho de fonte */
-  }
-
-  #certificados li {
-    font-size: 0.9rem; /* Ajuste no tamanho das fontes nos itens de certificados */
-  }
-
-  footer {
-    font-size: 0.9rem; /* Ajuste do tamanho da fonte no rodapé */
-  }
-}
-
-/* Para telas de celular, com largura até 480px */
-@media (max-width: 480px) {
-  header h1 {
-    font-size: 1.25rem; /* Ajusta mais para celulares pequenos */
-  }
-
-  header p {
-    font-size: 0.85rem; /* Reduz mais a fonte para telas pequenas */
-  }
-
-  section h2 {
-    font-size: 1.2rem; /* Ajusta o tamanho para maior clareza */
-  }
-
-  ul li {
-    font-size: 0.9rem; /* Ajuste de tamanho das listas */
-  }
-
-  .experiencia-item h3 {
-    font-size: 1rem; /* Mais ajuste para telas menores */
-  }
-
-  .experiencia-item p {
-    font-size: 0.85rem; /* Ajuste para não sobrecarregar */
-  }
-
-  #habilidades li {
-    font-size: 0.9rem; /* Ajuste nos itens */
-  }
-
-  #certificados li {
-    font-size: 0.85rem; /* Ajuste no tamanho para telas pequenas */
-  }
-
-  footer {
-    font-size: 0.8rem; /* Ajuste final no rodapé */
   }
 }
