@@ -34,6 +34,18 @@ habilidadesItems.forEach(item => {
         item.style.transform = 'scale(1)';
     });
 });
+// Ação de mostrar/esconder informações ao clicar na foto
+document.getElementById('foto').addEventListener('click', function() {
+    const info = document.getElementById('info');
+    
+    // Alterna a visibilidade das informações
+    if (info.style.display === 'none' || info.style.display === '') {
+        info.style.display = 'block';
+    } else {
+        info.style.display = 'none';
+    }
+});
+
 
 // 3. Exibir uma mensagem de alerta quando o botão de contato for clicado, mas sem interferir no link do WhatsApp
 const contatoBtn = document.getElementById('contatoBtn');
