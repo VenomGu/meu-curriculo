@@ -41,7 +41,7 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 6px;
-  width: 380px; /* Largura fixa para a parte azul */
+  width: 400px; /* Largura fixa para a parte azul */
   height: fit-content; /* Para ocupar toda a altura da tela */
   margin: 5px;
   position: fixed;
