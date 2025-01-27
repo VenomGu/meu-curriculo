@@ -27,8 +27,11 @@ body {
   cursor: pointer;
 }
 
-.btn-custom:focus {
-  outline: none;
+/* Remover o contorno (outline) de botões */
+.btn-custom:focus,
+.btn-custom:active {
+  outline: none !important; /* Garante que o outline não seja aplicado */
+  box-shadow: none !important; /* Remove qualquer sombra que possa aparecer no foco */
 }
 
 .header-content .btn-custom:hover {
