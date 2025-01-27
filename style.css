@@ -15,17 +15,19 @@ body {
   display: flex;
 }
 
-/* Estilo personalizado para o botão */
 .btn-custom {
-  background-color: #4e73df; /* Cor de fundo personalizada */
-  color: white; /* Cor do texto */
-  font-weight: bold; /* Tornar o texto mais forte */
-  border-radius: 20px; /* Bordas arredondadas */
-  padding: 10px 20px; /* Ajuste de padding */
-  transition: background-color 0.3s ease; /* Animação ao passar o mouse */
+  background-color: #4e73df;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  width: -webkit-fill-available;
+  border: none;
+  cursor: pointer;
 }
 
-.btn-custom:hover {
+.header-content .btn-custom:hover {
   background-color: #2e59d9; /* Cor de fundo ao passar o mouse */
 }
 
@@ -223,6 +225,7 @@ footer {
   .main-content {
     margin-left: 0;
     padding: 1rem;
+    margin-top: 150px;
   }
 
   #foto img {
