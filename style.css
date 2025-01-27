@@ -29,6 +29,7 @@ body {
 
 .header-content .btn-custom:hover {
   background-color: #2e59d9; /* Cor de fundo ao passar o mouse */
+  color: #fff;
 }
 
 /* Cabeçalho */
@@ -41,7 +42,7 @@ header {
   align-items: center;
   padding: 6px;
   width: 380px; /* Largura fixa para a parte azul */
-  height: auto; /* Para ocupar toda a altura da tela */
+  height: fit-content; /* Para ocupar toda a altura da tela */
   margin: 5px;
   position: fixed;
 }
@@ -53,11 +54,11 @@ header .header-content {
 header h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 header p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
@@ -226,6 +227,7 @@ footer {
     margin-left: 0;
     padding: 1rem;
     margin-top: 150px;
+    margin-top: 120px;
   }
 
   #foto img {
