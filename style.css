@@ -15,53 +15,28 @@ body {
   display: flex;
 }
 
-/* Estilos gerais, exceto para a parte 'Sobre' */
-body {
-  font-size: 18px; /* Aumenta a fonte base para todo o site */
+.btn-custom {
+  background-color: #4e73df;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  width: -webkit-fill-available;
+  border: none;
+  cursor: pointer;
 }
 
-section h2 {
-  font-size: 2.2rem; /* Aumenta o tamanho das seções */
+/* Remover o contorno (outline) de botões */
+.btn-custom:focus,
+.btn-custom:active {
+  outline: none !important; /* Garante que o outline não seja aplicado */
+  box-shadow: none !important; /* Remove qualquer sombra que possa aparecer no foco */
 }
 
-ul li {
-  font-size: 1.4rem; /* Aumenta o tamanho da lista */
-}
-
-.experiencia-item h3 {
-  font-size: 1.8rem; /* Aumenta o título da experiência */
-}
-
-.experiencia-item p {
-  font-size: 1.2rem; /* Aumenta o texto dentro dos itens de experiência */
-}
-
-#habilidades li {
-  font-size: 1.4rem; /* Aumenta o tamanho da lista de habilidades */
-}
-
-#certificados li {
-  font-size: 1.2rem; /* Aumenta o tamanho do texto de certificados */
-}
-
-footer {
-  font-size: 1.2rem; /* Aumenta o tamanho da fonte no rodapé */
-}
-
-/* Sobre mim: Mantendo o tamanho da fonte original */
-#sobre p {
-  background-color: #f9f9f9;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  font-size: 1.2rem; /* Tamanho da fonte do 'Sobre' */
-}
-
-#sobre p:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+.header-content .btn-custom:hover {
+  background-color: #2e59d9; /* Cor de fundo ao passar o mouse */
+  color: #fff;
 }
 
 /* Cabeçalho */
@@ -73,73 +48,274 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 6px;
-  width: 400px;
-  height: fit-content;
+  width: 400px; /* Largura fixa para a parte azul */
+  height: fit-content; /* Para ocupar toda a altura da tela */
   margin: 5px;
   position: fixed;
 }
 
+header .header-content {
+  text-align: center;
+}
+
 header h1 {
-  font-size: 2.5rem; /* Aumenta o tamanho do título */
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-size: x-large;
 }
 
 header p {
-  font-size: 1.4rem; /* Aumenta o tamanho do texto */
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header a:hover {
+  text-decoration: underline;
+  color: #f4f7fc;
+}
+
+#foto img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* Corpo do conteúdo (à direita da parte azul) */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  margin-left: 400px; /* Para que o conteúdo comece após a parte azul */
+  height: 100vh;
+}
+
+/* Seções do currículo */
+section {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  border-bottom: 2px solid #4e73df;
+  padding-bottom: 0.5rem;
+}
+
+/* Sobre mim */
+#sobre p {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#sobre p:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Lista de experiências e habilidades */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Itens de experiência */
+.experiencia-item {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experiencia-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.experiencia-item p {
+  font-size: 1rem;
+  color: #777;
+}
+
+.experiencia-item ul {
+  margin-top: 1rem;
+}
+
+.experiencia-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Habilidades */
+#habilidades li {
+  background: #ecf0f1;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 0.5rem;
+  font-size: 1rem;
+  color: #555;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#habilidades li:hover {
+  background-color: #4e73df;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Certificados */
+#certificados ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#certificados li {
+  background-color: #f0f0f5;
+  padding: 1rem;
+  border-radius: 8px;
+  flex: 1 1 30%;
+  text-align: center;
+  font-size: 1rem;
+}
+
+#certificados li:hover {
+  background-color: #4e73df;
+  color: #fff;
+}
+
+/* Rodapé */
+footer {
+  background: #4e73df;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
   body {
-    font-size: 17px; /* Ajuste para telas menores */
+    flex-direction: column;
+  }
+
+  header {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 1rem;
+    margin-top: 150px;
+    margin-top: 120px;
+  }
+
+  #foto img {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* Ajuste de font-size para telas menores que 768px */
+  header h1 {
+    font-size: 1.5rem; /* Reduzido para dispositivos menores */
+  }
+
+  header p {
+    font-size: 0.9rem; /* Ajuste para tornar o texto mais legível em telas pequenas */
   }
 
   section h2 {
-    font-size: 1.8rem; /* Ajusta para telas menores */
+    font-size: 1.5rem; /* Reduzido para maior legibilidade */
   }
 
   ul li {
-    font-size: 1.2rem;
+    font-size: 1rem; /* Ajuste para listas */
   }
 
   .experiencia-item h3 {
-    font-size: 1.6rem;
+    font-size: 1.2rem; /* Reduzido para melhor adaptação */
   }
 
   .experiencia-item p {
-    font-size: 1.1rem;
+    font-size: 0.9rem; /* Ajuste de tamanho de texto */
   }
 
   #habilidades li {
-    font-size: 1.2rem;
+    font-size: 1rem; /* Ajuste de tamanho de fonte */
   }
 
   #certificados li {
-    font-size: 1.1rem;
+    font-size: 0.9rem; /* Ajuste no tamanho das fontes nos itens de certificados */
   }
 
   footer {
-    font-size: 1rem;
+    font-size: 0.9rem; /* Ajuste do tamanho da fonte no rodapé */
   }
 }
 
+/* Para telas de celular, com largura até 480px */
 @media (max-width: 480px) {
-  body {
-    font-size: 16px; /* Ajuste para telas menores */
+  header h1 {
+    font-size: 1.25rem; /* Ajusta mais para celulares pequenos */
   }
 
-  header h1 {
-    font-size: 1.5rem; /* Ajusta para telas menores */
+  header p {
+    font-size: 0.85rem; /* Reduz mais a fonte para telas pequenas */
   }
 
   section h2 {
-    font-size: 1.6rem;
+    font-size: 1.2rem; /* Ajusta o tamanho para maior clareza */
   }
 
   ul li {
-    font-size: 1rem;
+    font-size: 0.9rem; /* Ajuste de tamanho das listas */
+  }
+
+  .experiencia-item h3 {
+    font-size: 1rem; /* Mais ajuste para telas menores */
+  }
+
+  .experiencia-item p {
+    font-size: 0.85rem; /* Ajuste para não sobrecarregar */
+  }
+
+  #habilidades li {
+    font-size: 0.9rem; /* Ajuste nos itens */
+  }
+
+  #certificados li {
+    font-size: 0.85rem; /* Ajuste no tamanho para telas pequenas */
   }
 
   footer {
-    font-size: 0.9rem;
+    font-size: 0.8rem; /* Ajuste final no rodapé */
   }
 }
