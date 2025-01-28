@@ -257,11 +257,11 @@ footer {
   }
 
   section h2 {
-    font-size: 1.5rem; /* Reduzido para maior legibilidade */
+    font-size: 20px; /* Reduzido para maior legibilidade */
   }
 
   ul li {
-    font-size: 1rem; /* Ajuste para listas */
+    font-size: 14px; /* Ajuste para listas */
   }
 
   .experiencia-item h3 {
@@ -269,7 +269,7 @@ footer {
   }
 
   .experiencia-item p {
-    font-size: 0.9rem; /* Ajuste de tamanho de texto */
+    font-size: 12px; /* Ajuste de tamanho de texto */
   }
 
   #habilidades li {
@@ -277,11 +277,11 @@ footer {
   }
 
   #certificados li {
-    font-size: 0.9rem; /* Ajuste no tamanho das fontes nos itens de certificados */
+    font-size: 12px; /* Ajuste no tamanho das fontes nos itens de certificados */
   }
 
   footer {
-    font-size: 0.9rem; /* Ajuste do tamanho da fonte no rodapé */
+    font-size: 14px; /* Ajuste do tamanho da fonte no rodapé */
   }
 }
 
@@ -300,7 +300,7 @@ footer {
   }
 
   ul li {
-    font-size: 0.9rem; /* Ajuste de tamanho das listas */
+    font-size: 12px; /* Ajuste de tamanho das listas */
   }
 
   .experiencia-item h3 {
@@ -312,14 +312,14 @@ footer {
   }
 
   #habilidades li {
-    font-size: 0.9rem; /* Ajuste nos itens */
+    font-size: 12px; /* Ajuste nos itens */
   }
 
   #certificados li {
-    font-size: 0.85rem; /* Ajuste no tamanho para telas pequenas */
+    font-size: 14px; /* Ajuste no tamanho para telas pequenas */
   }
 
   footer {
-    font-size: 0.8rem; /* Ajuste final no rodapé */
+    font-size: 14px; /* Ajuste final no rodapé */
   }
 }
