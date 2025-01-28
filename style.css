@@ -65,7 +65,7 @@ header h1 {
 }
 
 header p {
-  font-size: 1.2rem;
+  font-size: 14px;
   margin-bottom: 1rem;
 }
 
@@ -205,7 +205,7 @@ ul li {
   border-radius: 8px;
   flex: 1 1 30%;
   text-align: center;
-  font-size: 1rem;
+  font-size: 12px;
 }
 
 #certificados li:hover {
@@ -249,11 +249,11 @@ footer {
 
   /* Ajuste de font-size para telas menores que 768px */
   header h1 {
-    font-size: 1.5rem; /* Reduzido para dispositivos menores */
+    font-size: xx-large; /* Reduzido para dispositivos menores */
   }
 
   header p {
-    font-size: 0.9rem; /* Ajuste para tornar o texto mais legível em telas pequenas */
+    font-size: 14px; /* Ajuste para tornar o texto mais legível em telas pequenas */
   }
 
   section h2 {
@@ -292,7 +292,7 @@ footer {
   }
 
   header p {
-    font-size: 0.85rem; /* Reduz mais a fonte para telas pequenas */
+    font-size: 13px; /* Reduz mais a fonte para telas pequenas */
   }
 
   section h2 {
@@ -300,7 +300,7 @@ footer {
   }
 
   ul li {
-    font-size: 12px; /* Ajuste de tamanho das listas */
+    font-size: 14px; /* Ajuste de tamanho das listas */
   }
 
   .experiencia-item h3 {
