@@ -96,6 +96,10 @@ header a:hover {
   height: 100vh;
 }
 
+.educacao-item h3 {
+  font-size: 16px;
+}
+
 /* Seções do currículo */
 section {
   max-width: 1200px;
@@ -151,13 +155,13 @@ ul li {
 }
 
 .experiencia-item h3 {
-  font-size: 1.5rem;
+  font-size: x-large;
   color: #333;
   margin-bottom: 0.5rem;
 }
 
 .experiencia-item p {
-  font-size: 1rem;
+  font-size: 14px;
   color: #777;
 }
 
@@ -177,7 +181,7 @@ ul li {
   border-radius: 20px;
   display: inline-block;
   margin: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #555;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
