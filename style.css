@@ -14,7 +14,6 @@ body {
   font-size: 16px;
   display: flex;
 }
-
 .btn-custom {
   background-color: #4e73df;
   color: white;
@@ -80,7 +79,18 @@ header a:hover {
   color: #f4f7fc;
 }
 
-#foto img {
+#qrcode {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+#qrcode-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#foto {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -125,7 +135,9 @@ section h2 {
   margin-bottom: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 #sobre p:hover {
   transform: translateY(-5px);
@@ -151,7 +163,9 @@ ul li {
   margin-bottom: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .experiencia-item h3 {
@@ -183,7 +197,9 @@ ul li {
   margin: 0.5rem;
   font-size: 1.2rem;
   color: #555;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
 }
 
 #habilidades li:hover {
@@ -240,11 +256,6 @@ footer {
     padding: 1rem;
     margin-top: 150px;
     margin-top: 120px;
-  }
-
-  #foto img {
-    width: 100px;
-    height: 100px;
   }
 
   /* Ajuste de font-size para telas menores que 768px */
