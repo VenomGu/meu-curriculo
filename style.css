@@ -135,9 +135,7 @@ section h2 {
   margin-bottom: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 #sobre p:hover {
   transform: translateY(-5px);
@@ -157,33 +155,36 @@ ul li {
 }
 
 /* Itens de experiência */
-.experiencia-item {
+.experiencia-item,
+.projeto-item {
   background-color: #f9f9f9;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.experiencia-item h3 {
+.experiencia-item h3,
+.projeto-item h3 {
   font-size: x-large;
   color: #333;
   margin-bottom: 0.5rem;
 }
 
-.experiencia-item p {
+.experiencia-item p,
+.projeto-item p {
   font-size: 14px;
   color: #777;
 }
 
-.experiencia-item ul {
+.experiencia-item ul,
+.projeto-item ul {
   margin-top: 1rem;
 }
 
-.experiencia-item:hover {
+.experiencia-item:hover,
+.projeto-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
@@ -197,9 +198,7 @@ ul li {
   margin: 0.5rem;
   font-size: 1.2rem;
   color: #555;
-  transition:
-    transform 0.3s ease,
-    background-color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 #habilidades li:hover {
@@ -275,11 +274,13 @@ footer {
     font-size: 14px; /* Ajuste para listas */
   }
 
-  .experiencia-item h3 {
+  .experiencia-item h3,
+  .projeto-item h3 {
     font-size: 18px; /* Reduzido para melhor adaptação */
   }
 
-  .experiencia-item p {
+  .experiencia-item p,
+  .projeto-item p {
     font-size: 12px; /* Ajuste de tamanho de texto */
   }
 
@@ -314,11 +315,13 @@ footer {
     font-size: 14px; /* Ajuste de tamanho das listas */
   }
 
-  .experiencia-item h3 {
+  .experiencia-item h3,
+  .projeto-item h3 {
     font-size: 1rem; /* Mais ajuste para telas menores */
   }
 
-  .experiencia-item p {
+  .experiencia-item p,
+  .projeto-item p {
     font-size: 0.85rem; /* Ajuste para não sobrecarregar */
   }
 

@@ -10,7 +10,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // 2. Destacar itens de experiência e habilidades ao passar o mouse
-const experienciaItems = document.querySelectorAll('.experiencia-item');
+const experienciaItems = document.querySelectorAll('.experiencia-item', '.projeto-item');
 const habilidadesItems = document.querySelectorAll('#habilidades li');
 
 experienciaItems.forEach(item => {
